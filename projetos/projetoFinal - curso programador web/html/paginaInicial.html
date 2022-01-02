@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Top Açai | Pagina Inicial</title>
+    <link rel="stylesheet" href="../css/estiloPaginaInicial.css">
+    <link rel="stylesheet" href="../../../css/estiloBtn.css">
+</head>
+<body>
+    <div w3-include-html="../../../html/btnParaIndex.html"></div>
+    <!-- inicio menu -->
+    <header class="menu">
+        
+        <div id="TopoPagina"> <img src="../imagens/logo.png" alt="">  
+            <h1> Açaiteria e lanchonete </h1>
+        </div> 
+        <div>
+            <ul >
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=+5532998393093" target="_blank">Ligar Agora</a>  
+                </li>
+                <li> 
+                    <a href="sobreNos.html">Sobre Nós</a> 
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- fim menu -->
+
+    <!-- inicio contra menu -->
+    <nav class="contraMenu">
+        <section>
+            <div class="informacoes">
+                <span id="horarioAuto" class="funcionamentoPadrao"> aberto/fechado </span> <br> <br>
+                <a>Horario de funcionamento &#10132;
+                    <div class="horarioFuncionamento">
+                        <table>
+                            <caption>Horario de funcionamento</caption>
+                            <tr>
+                                <th>segunda</th>
+                                <td>fechado</td>
+                            </tr>
+                            <tr>
+                                <th>terça</th>
+                                <td>18:00 - 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>quarta</th>
+                                <td>18:00 - 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>quinta</th>
+                                <td>18:00 - 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>sexta</th>
+                                <td>18:00 - 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>sabado</th>
+                                <td>18:00 - 00:00</td>
+                            </tr>
+                            <tr>
+                                <th>domingo</th>
+                                <td>18:00 - 00:00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </a>
+                <span>
+                    <h2> Endereço:</h2>
+                    <h3> Rua: *****, nº *** - Bairro: ****** <br>
+                    MG, CEP: ***** </h3>
+                    <a href="#informacoes">Confira onde estamos</a>
+                </span>
+            </div>
+
+            <div class="atalhos">
+                <h2>Cardapio</h2>
+                <ul>
+                    <li> <a href="#opcao1"> Balcão </a> </li>
+                    <li> <a href="#opcao2"> Derivados de Açai </a> </li>
+                    <li> <a href="#opcao3"> Lanches </a> </li>
+                </ul>
+            </div>
+        </section>
+
+    </nav>
+    <main class="corpo">
+
+        <section class="cardapio">
+
+            <!-- <div class="campoBusca">
+                <input type="text" placeholder="campo de busca">
+            </div> -->
+            
+            <div class="monteOSeu" id="idMonteOSeu">
+                <div>
+                    <h3>Monte o seu acai</h3>
+                    <div>
+                        <span class="slide">
+                            <h2> </h2>
+                        </span>
+
+                        <div>
+                            <p>Crie o seu açai do jeito que sua fome mandar com: <br> <br>
+                               
+                                     3 opções de creme <br> <br>
+                                     4 opções de tamanhos <br> <br>
+                                     13 variedades de acrescimos <br> <br>
+                            </p>
+                            <article id="ativar">clique aqui</article>
+                        </div>
+                    </div>
+                </div>
+                <article>
+                    <div class="popUpOculto" id="popUp">
+                        <span id="fechar" class="botaoFechar">X</span>
+                        <img src="../imagens/copoAcai.jpg" class="imgForm" id="imgForm">
+
+                            <form action="" class="formMont" id="">
+                                <fieldset>
+                                    <label for=""> Sabor</label> <br>
+                                    <input type="radio" name="sabor" onclick="saborAcai()"> Creme de açai <br>
+                                    <input type="radio" name="sabor" onclick="saborAcaiCupuacu()"> Açai com Cupuaçu <br>
+                                    <input type="radio" name="sabor" onclick="saborCupuacu()"> Creme de cupuaçu
+                                </fieldset>
+                                <fieldset>
+                                    <label for=""> Quantidade</label> <br>
+                                    <input type="radio" name="quantidade" id="a" onclick="valor1()">300ml
+                                    <input type="radio" name="quantidade" id="b" onclick="valor2()">400ml
+                                    <input type="radio" name="quantidade" id="c" onclick="valor3()">500ml
+                                    <input type="radio" name="quantidade" id="d" onclick="valor4()">700ml
+                                </fieldset>
+                                <fieldset class="acrescimos">
+                                    <label for="">acrescimos</label> <br>
+                                    <input type="checkbox"  id=""> Calda chocolate  <br>
+                                    <input type="checkbox"  id=""> Calda chocolate branco  <br>
+                                    <input type="checkbox"  id=""> Morango <br>
+                                    <input type="checkbox"  id=""> Banana <br>
+                                    <input type="checkbox"  id=""> Leite ninho <br>
+                                    <input type="checkbox"  id=""> Paçoca <br>
+                                    <input type="checkbox"  id=""> Granulado <br>
+                                    <input type="checkbox"  id=""> Ovomaltine <br>
+                                    <input type="checkbox"  id=""> Granola <br>
+                                    <input type="checkbox"  id=""> Confete <br>
+                                    <input type="checkbox"  id=""> Nutela <br>
+                                    <input type="checkbox"  id=""> Coco ralado <br>
+                                    <input type="checkbox"  id=""> Bis 
+                                </fieldset>
+                                <fieldset>
+                                    <div>
+                                        valor:
+                                        <span id="valorMontagem">R$00,00</span>
+                                    </div>
+                                    <input class="btnEnviarForm" type="button" value="Adicionar ao carrinho" onclick="addMontagem()"> 
+                                </fieldset>
+                            </form>
+                    </div>
+                </article>
+            </div>
+
+            <div class="listaItem"> <!--opcao 1-->
+                <h3 id="opcao1"> Balcão</h3>
+                <ul>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op1img1"><img src="../imagens/barcaAcai.jpg"></a></span>
+                            <span class="valorItem" id="valorItem1Op1">R$ 39,90</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem1Op1"> Barca açai: </span>
+                            <span class="descricaoItem"> 1 litro de açai com ate 10 acrescimos </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op1img2"><img src="../imagens/discoAcai.png"></a></span>
+                            <span class="valorItem" id="valorItem2Op1">R$ 25,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem2Op1"> Disco Açai: </span>
+                            <span class="descricaoItem"> 750ml de açai com 5 opçoes de acrescimos </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op1img3"><img src="../imagens/desafioAcai.jpeg"></a></span>
+                            <span class="valorItem" id="valorItem3Op1">R$ 100,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem3Op1"> Desafio Super Barco: </span>
+                            <span class="descricaoItem"> <br>
+                                 <span class="negrito sublinhado"> Tempo maximo:</span> 15 min <br>
+                                 <span class="negrito sublinhado">obs:</span> Completando no tempo não paga <br>
+                                 <span class="negrito sublinhado"> Participantes:</span> Até 3 pessoas <br>
+                                 <span class="negrito sublinhado"> Descrição:</span> O Super Barco leva 4 litros de açai, 6 coberturas a escolha do cliente e duas taças de 400 ml cada com açai e complementos <br>
+                                 <span class="negrito sublinhado"> Peso medio total:</span> 6,8 kg
+                             </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    
+                </ul>
+                <article> <!-- copilado caixas zoom-->
+                <div class="caixaZoom" id="op1img1">
+                    <div class="caixaImg">
+                        <a href="#opcao1" class="botaoFechar">X</a>
+                        <img src="../imagens/barcaAcai.jpg">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op1img2">
+                    <div class="caixaImg">
+                        <a href="#opcao1" class="botaoFechar">X</a>
+                        <img src="../imagens/discoAcai.png">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op1img3">
+                    <div class="caixaImg">
+                        <a href="#opcao1" class="botaoFechar">X</a>
+                        <img src="../imagens/desafioAcai.jpeg">             
+                    </div>
+                </div>
+            </div>
+
+            <div class="listaItem"> <!--opcao 2-->
+                <h3 id="opcao2"> derivados açai</h3>
+                <ul>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op2img1"><img src="../imagens/picoleAcai.png"></a></span>
+                            <span class="valorItem" id="valorItem1Op2">R$ 5,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem1Op2"> Picolé sabor açai: </span>
+                            <span class="descricaoItem"> Delicioso picolé sabor açai </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op2img2"><img src="../imagens/sucoAcai.jpg"></a></span>
+                            <span class="valorItem" id="valorItem2Op2">R$ 2,50</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem2Op2"> Suco açai: </span>
+                            <span class="descricaoItem"> Suco de copo sabor açai 200ml </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op2img3"><img src="../imagens/vitaminaAcai.jpg"></a></span>
+                            <span class="valorItem" id="valorItem3Op2">R$ 10,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem3Op2"> Vitamina: </span>
+                            <span class="descricaoItem"> Vitamina sabor açai com xarope de guaraná ou banana  250ml </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op2img4"><img src="../imagens/pote250ml.jpg"></a></span>
+                            <span class="valorItem" id="valorItem4Op2">R$ 7,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem4Op2"> Pote de acai: </span>
+                            <span class="descricaoItem"> Pote hermeticamente fechado de Creme de açai com guarana e complemento de granola </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                </ul>
+                <article> <!-- copilado caixas zoom-->
+                <div class="caixaZoom" id="op2img1">
+                    <div class="caixaImg">
+                        <a href="#opcao2" class="botaoFechar">X</a>
+                        <img src="../imagens/picoleAcai.png">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op2img2">
+                    <div class="caixaImg">
+                        <a href="#opcao2" class="botaoFechar">X</a>
+                        <img src="../imagens/sucoAcai.jpg">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op2img3">
+                    <div class="caixaImg">
+                        <a href="#opcao2" class="botaoFechar">X</a>
+                        <img src="../imagens/vitaminaAcai.jpg">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op2img4">
+                    <div class="caixaImg">
+                        <a href="#opcao2" class="botaoFechar">X</a>
+                        <img src="../imagens/pote250ml.jpg">             
+                    </div>
+                </div>
+                </article>
+            </div>
+
+            <div class="listaItem"> <!--opcao 3-->
+                <h3 id="opcao3"> Lanches</h3>
+                <ul>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op3img1"><img src="../imagens/coxinha.jpg"></a></span>
+                            <span class="valorItem" id="valorItem1Op3">R$ 5,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem1Op3"> coxinha com cutupiry: </span>
+                            <span class="descricaoItem"> deliciosa coxinha de frango cremoso + catupiry </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op3img2"><img src="../imagens/empada.jpg"></a></span>
+                            <span class="valorItem" id="valorItem2Op3">R$ 4,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem2Op3"> Empada de frango: </span>
+                            <span class="descricaoItem"> Empada de frango cremoso </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op3img3"><img src="../imagens/fatiaPizza.jpg"></a></span>
+                            <span class="valorItem" id="valorItem3Op3">R$ 6,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem3Op3"> Fatia de pizza: </span>
+                            <span class="descricaoItem"> Pizza sabor 4 queijos </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    <li class="lista">
+                        <span >
+                            <span class="imagemLanche"> <a href="#op3img4"><img src="../imagens/kibeCatu.jpg"></a></span>
+                            <span class="valorItem" id="valorItem4Op3">R$ 5,00</span>
+                        </span>
+                        <span>
+                            <span class="nomeItem" id="nomeItem4Op3"> Quibe: </span>
+                            <span class="descricaoItem"> Quibe frito com recheio de catupiry </span>
+                        </span>
+                        <span class="botaoComprar">
+                            <a>+carrinho</a>
+                        </span>
+                    </li>
+                    
+                </ul>
+                <article> <!-- copilado caixas zoom-->
+                <div class="caixaZoom" id="op3img1">
+                    <div class="caixaImg">
+                        <a href="#opcao3" class="botaoFechar">X</a>
+                        <img src="../imagens/coxinha.jpg">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op3img2">
+                    <div class="caixaImg">
+                        <a href="#opcao3" class="botaoFechar">X</a>
+                        <img src="../imagens/empada.jpg">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op3img3">
+                    <div class="caixaImg">
+                        <a href="#opcao3" class="botaoFechar">X</a>
+                        <img src="../imagens/fatiaPizza.jpg">             
+                    </div>
+                </div>
+                <div class="caixaZoom" id="op3img4">
+                    <div class="caixaImg">
+                        <a href="#opcao3" class="botaoFechar">X</a>
+                        <img src="../imagens/kibeCatu.jpg">             
+                    </div>
+                </div>
+                </article>
+            </div>
+            
+
+        </section>
+
+        <section class="carrinho">
+            <div>
+                <img src="../imagens/iconeCarrinho.png" alt="">
+                <h2>CARRINHO</h2>
+            </div>
+            <article class="listaCarrinho">
+                <ul id="listaCarrinho">
+
+                </ul>
+            </article>
+            <div class="subTotalCarrinho">
+                <span>
+                    Sub total do pedidos: <br>
+                    <span>
+                        R$ 00,00
+                    </span> 
+                </span>
+                <p>Taxa de entrega calculada no próximo passo!</p>
+                <input type="button" value="Informar Endereço e finalizar">
+            </div>
+
+        </section>
+    </main>
+    <!-- fim corpo -->
+
+    <!-- inicio informaçoes finais -->
+    <section class="informacoesFinais" id="informacoes">
+        
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.096451890137!2d-43.92313198563393!3d-19.920339943152044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa699de3715a971%3A0x655eb6b9879f3dcd!2sGoogle!5e0!3m2!1spt-BR!2sbr!4v1637270713773!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        </div>
+
+    </section>
+    <!-- fim informaçoes finais -->
+
+
+<script src="../script/verificaFuncionamento.js"></script>
+<script src="../script/popUp.js"></script>
+<script src="../script/montagemAcai.js"></script>
+<script src="../../../js/importBtn.js"></script>
+<script>
+    includeHTML();
+</script>
+</body>
+</html>

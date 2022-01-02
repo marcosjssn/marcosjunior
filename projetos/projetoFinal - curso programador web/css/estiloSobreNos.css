@@ -1,0 +1,119 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+/* inicio menu */
+.menu{
+    /* fundo do menu */
+    background-image: url(../Imagens/bannerAcai.jpeg);
+    width: 100%;
+    background-position-x: center;
+    border-bottom: 1px solid black;
+    background-size: cover;
+}
+    .menu div img{
+        /* icone do menu */
+        border-radius: 20px;
+        border: 1px solid black;
+        width: 140px; 
+        height: 120px; 
+        vertical-align:middle ;  
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+    .menu div h1{
+        /* texto pos icone */
+        background-color:rgba(250, 223, 32, 0.5);
+        border-radius: 6px;
+        color: rgb(22, 21, 21);
+        padding: 5px;
+        font-size: 30px;
+        display: inline-block;
+    }
+    .menu div ul {
+        /* scopo botoes */
+        text-align: end;
+        list-style: none;
+        padding-bottom: 10px;
+        margin-bottom: 1px;
+    }
+        .menu div ul li{
+            /* botoes individuais */
+            display: inline;
+            padding-right: 20px;
+        }
+            .menu div ul li a{
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                text-decoration: none;
+                background-color:rgba(250, 223, 32, 0.7);
+                color: rgb(17, 16, 16);
+                border-bottom: 3px solid rgb(100, 98, 98);
+                border-radius: 5px;
+                transition: 0.5s;  
+                }
+                    .menu div ul li a:hover{
+                        background-color: rgb(17, 16, 16);
+                        color:rgba(250, 223, 32, 0.7);
+                    }
+/* fim menu */
+.corpo{
+    background-image: url(../imagens/fundoGeral.png);
+    background-size: cover;
+}
+.descricao{
+    display: flex;
+    
+}
+    .descricao div{
+        text-align: center;
+        margin: 20px 60px;
+        background-color: rgb(17, 16, 16, 0.8);
+        border-radius: 10px;
+        padding: 10px 30px;
+        border: 1px solid silver;
+    }
+        .descricao div h1{
+            color: rgba(250, 223, 32);
+            text-transform: uppercase;
+            font-size: 30px;
+        }
+        .descricao div p{
+            color: lightblue;
+            font-size: 20px;
+        }
+
+    .galeria{
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 25px;
+    }
+        .galeria h1{
+            color: rgba(250, 223, 32);
+            font-size: 50px;
+            text-transform: uppercase;
+        }
+        .galeria span{
+            display: flex;
+            overflow-x: auto;
+            margin-bottom: 30px;
+            width: 50%;
+            margin-left: 25%;
+            background-color: rgb(17, 16, 16, 0.8);
+            border-top-left-radius: 20px ;
+            border-top-right-radius: 20px ;
+            border: 1px solid silver;
+
+        }
+            .galeria span img{
+                margin: 10px 20px;
+                height: 300px;
+                width: 300px;
+                border-radius: 20px;
+                border: 1px solid black;
+                
+            }

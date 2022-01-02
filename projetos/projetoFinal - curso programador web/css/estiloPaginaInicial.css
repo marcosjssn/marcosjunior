@@ -1,0 +1,537 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+}
+.btnPortifolio{
+    color: white;
+    background-color: rgb(22, 21, 21);
+    padding: 6px;
+    border-radius: 10px;
+    text-decoration: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+    .btnPortifolio:hover{
+        background-color: rgb(48, 44, 44);
+    }
+.negrito{
+    font-weight: bold;
+}
+.italico{
+    font-style: italic;
+}
+.sublinhado{
+    text-decoration: underline;
+}
+/* fim config padroes */
+
+/* inicio menu */
+.menu{
+    /* fundo do menu */
+    background-image: url(../imagens/bannerAcai.jpeg);
+    width: 100%;
+    background-position-x: center;
+    border-bottom: 1px solid black;
+    background-size: cover ;
+}
+    .menu div img{
+        /* icone do menu */
+        border-radius: 20px;
+        border: 1px solid black;
+        width: 140px; 
+        height: 120px; 
+        vertical-align:middle ;  
+        margin-top: 15px;
+        margin-left: 15px;
+
+    }
+    .menu div h1{
+        /* texto pos icone */
+        background-color:rgba(250, 223, 32, 0.7);
+        border-radius: 6px;
+        color: black;
+        padding: 5px;
+        font-size: 30px;
+        display: inline-block;
+    }
+    .menu div ul {
+        /* scopo botoes */
+        text-align: end;
+        list-style: none;
+        padding-bottom: 10px;
+        margin-bottom: 1px;
+        margin-top: 0;
+    }
+        .menu div ul li{
+            /* botoes individuais */
+            display: inline;
+            padding-right: 20px;
+        }
+            .menu div ul li a{
+                padding-right: 10px;
+                padding-left: 10px;
+                padding-bottom: 5px;
+                padding-top: 5px;
+                text-decoration: none;
+                background-color:rgba(250, 223, 32, 0.7);
+                color: rgb(17, 16, 16);
+                border-bottom: 3px solid rgb(100, 98, 98);
+                border-radius: 5px;
+                transition: 0.5s;  
+                }
+                    .menu div ul li a:hover{
+                        background-color: rgb(17, 16, 16);
+                        color:rgba(250, 223, 32, 0.7);
+                    }
+/* fim menu */
+
+/* inicio contraMenu */
+.contraMenu section{
+    display: flex;
+}
+.informacoes{
+    text-align: center;
+    background-image: url(../imagens/fundoPersonalizado.jpg);
+    background-size: cover;
+    width: 35%;
+    padding: 10px;
+    border: 1px black solid;
+}
+    /* inicio verificaçao horario */
+.funcionamentoPadrao{
+    color: white;
+    text-transform: uppercase;
+    background-color: blue;
+    padding: 7px;
+    border-radius: 10px;
+}
+.funcionamentoAberto{
+    color: white;
+    text-transform: uppercase;
+    background-color: green;
+    padding: 7px;
+    border-radius: 10px;
+}
+.funcionamentoFechado{
+    color: white;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 7px;
+    border-radius: 10px;
+}
+    /* fim verificaçao horario */
+    /* inicio tabela horario */
+.horarioFuncionamento{
+    background-color: rgb(17, 16, 16, 0.8);
+    border-radius: 20px;
+    border: 1px solid black;
+}
+.informacoes a div{
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+}
+    .informacoes a:hover div{
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        top: 25%;
+        left: 25%;
+    }
+.horarioFuncionamento table{
+    margin: 20px;
+    border-right: 1px solid purple;
+    border-left: 1px solid purple;
+    padding: 5px 20px;
+}
+.horarioFuncionamento table caption{
+    text-align: center;
+    text-transform: uppercase;
+}
+.horarioFuncionamento table tr th{
+    text-align: justify;
+    padding: 5px;
+    padding-right: 10px;
+}
+    /* fim tabela horario */
+    .informacoes a{
+        background-color:rgba(250, 223, 32, 0.7);
+        color: rgb(17, 16, 16);
+        border-bottom: 3px solid rgb(100, 98, 98);
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 15px;
+        padding: 5px;
+        display: inline-block;
+        cursor: pointer;
+    }
+        .informacoes a:hover{
+            background-color:rgb(17, 16, 16);
+            color: rgba(250, 223, 32, 0.7);
+        }
+    /* atalhos */ 
+
+.atalhos{
+    text-align: center;
+    background-image: url(../imagens/fundoPersonalizado.jpg);
+    background-size: cover;
+    width: 65%;
+    padding: 10px;
+    border: 1px black solid;
+}
+    .atalhos h2{
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    .atalhos ul{
+        text-align: center;
+    }
+        .atalhos ul li{
+            list-style: none;
+            display: inline-block;
+            padding: 20px;
+            font-size: 20px;
+        }
+            .atalhos ul li a{
+                text-decoration: none;
+                padding: 5px;
+                border-radius: 10px;
+                background-color:rgba(250, 223, 32, 0.7);
+                color: rgb(17, 16, 16);
+                border-bottom: 3px solid rgb(100, 98, 98);
+                border-radius: 5px;
+            }
+                .atalhos ul li a:hover{
+                    background-color:rgb(17, 16, 16);
+                    color: rgba(250, 223, 32, 0.7);
+                }
+/* fim contraMenu */
+
+
+/* inicio corpo */
+.corpo{
+    background-image: url(../imagens/fundoGeral.png);
+    background-size: 100%;
+    display: flex;
+} 
+.campoBusca{
+    display: flex;
+    justify-content: center;
+}
+    .campoBusca input{
+        width: 50%;
+        border: 1px solid blue;
+        border-radius: 8px;
+        padding: 13px;
+        margin: 0;
+    }
+    .campoBusca img{
+        height: 30px;
+        width: 30px;
+    }
+.monteOSeu div div{
+    display: flex;
+}
+    .monteOSeu div div div{
+        bottom: 2px;
+        text-align: center;
+        flex-direction: column;
+    }
+            /* inicio slide */
+        .slide h2{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+            background-image:url(../imagens/logo.png);
+            background-size: cover;
+            animation: slide 20s infinite;
+            text-align: center;
+            border: 1px black solid;
+        }
+            @keyframes slide{
+                33%{
+                    background-image: url(../imagens/copoAcai.jpg);
+                    background-size: cover;
+                }
+                66%{
+                    background-image: url(../imagens/copoAcaiCupuacu.jpg);
+                    background-size: cover;
+                }
+                100%{
+                    background-image: url(../imagens/copoCupuacu.jpg);
+                    background-size: cover ;
+                }
+            }
+        /* fim slide */
+        .monteOSeu div div div p{
+            font-size: 23px;
+            color: rgba(250, 223, 32);
+
+        }
+        .monteOSeu div div div article{
+            font-size: 20px;
+            background-color:rgba(250, 223, 32, 0.7);
+            color: rgb(17, 16, 16);
+            border-bottom: 3px solid rgb(100, 98, 98);
+            border-radius: 5px;
+        }
+        .monteOSeu div div div article:hover{
+            background-color:rgb(17, 16, 16);
+            color: rgba(250, 223, 32, 0.7);
+        }
+/* inicio spam montagem */
+.popUpOculto{
+    visibility: hidden; 
+    opacity: 0;
+    display: none;
+}
+.popUpAtivo{
+    opacity: 1;
+    visibility: visible;
+    display: flex ;
+    justify-content: center;
+    width: 97%;
+    height: 97%;
+    top: 0;
+    left: 0;
+    background-color: rgba(10, 10, 10, 0.7);
+    position: fixed;
+}
+.spamMontagem img{
+    border-radius: 20px;
+    margin-right: 20px;
+}
+.monteOSeu ul li a{
+    cursor: pointer;
+}
+.monteOSeu div span{
+    cursor: pointer;
+}
+.formMont{
+    margin: 0px 30px;
+}
+.formMont fieldset{
+    background-color:rgb(17, 16, 16);
+    border-radius: 10px;
+    color: lightblue;
+}
+.formMont fieldset label{
+    font-size: 20px;
+    color: rgba(250, 223, 32);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.btnEnviarForm{
+    transition: 0.6s;
+    background-color:rgba(250, 223, 32, 0.7);
+    color: rgb(17, 16, 16);
+    border-bottom: 3px solid rgb(100, 98, 98);
+    border-radius: 5px;
+}
+.btnEnviarForm:hover{
+    background-color:rgb(17, 16, 16);
+    color: rgba(250, 223, 32, 0.7);
+}
+.acrescimos{
+    text-align: justify;
+}
+.botaoFechar{  /* tambem e usado no zum das imagens dos lanches */
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    text-align: center;
+    top: 0;
+    right: 5%;
+}
+/* fim spam montagem */
+.cardapio{
+    width: 68%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+.cardapio div{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid silver;
+}
+/* inicio configuraçoes zoom lanche */
+.caixaZoom{
+    visibility: hidden; 
+    opacity: 0;
+    display: none;
+}
+    .caixaZoom:target{
+        opacity: 1;
+        visibility: visible;
+        display: flex ;
+        justify-content: center;
+        width: 97%;
+        top: 0;
+        left: 0;
+        background-color: rgba(10, 10, 10, 0.7);
+        position: fixed;
+    }
+.caixaImg, img{
+    height: 400px;
+    width: 400px;
+    object-fit:contain ;
+}
+/* fim configuraçoes zoom lanche */
+    .cardapio div h3{
+        text-transform: uppercase;
+        font-size: 30px;
+        padding-left: 20px;
+        margin: 20px;
+        border-bottom: 1px solid white;
+        border-left: 1px solid white;
+        border-radius: 10px;
+        color: rgba(250, 223, 32);
+    }
+    .cardapio div ul{
+        padding: 20px;
+    }
+        .cardapio div ul li{
+            list-style: none;
+            padding: 10px 5px;
+            border-bottom: 1px solid white;
+            border-left: 1px solid white;
+            border-radius: 10px;
+            border-end-start-radius: 30px;
+            margin-bottom: 10px;
+        }
+            .cardapio div ul li a{
+                text-decoration: none;
+                margin: 10px ;
+            }
+.listaItem ul li{
+    display: flex;
+    align-items: flex-start;
+}
+.imagemLanche img{
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.nomeItem{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding-left: 10px ;
+    color: goldenrod;
+}
+.descricaoItem{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-left: 5px;
+    color: lightblue;
+}
+.valorItem{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    display: flex;
+}
+.botaoComprar{
+    font-size: 15px;
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-right: 10px;
+    align-self: flex-end;
+    margin-left: auto;
+    cursor: pointer;
+}
+    .botaoComprar a{
+        text-decoration: none;
+        padding: 6px;
+        text-transform: uppercase;
+        background-color:rgba(250, 223, 32, 0.7);
+        color: rgb(17, 16, 16);
+        border-bottom: 3px solid rgb(100, 98, 98);
+        border-radius: 5px;
+    }
+        .botaoComprar a:hover{
+            background-color:rgb(17, 16, 16);
+            color: rgba(250, 223, 32, 0.7);
+        }
+.carrinho{
+    border-radius: 10px;
+    /* position: fixed;
+    right: 0;
+    top: 0; */
+    width: 25%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 1%;
+    margin-right: 3%;
+}
+.carrinho div{
+    background-color: rgba(109, 3, 109, 0.8) ;
+    border-bottom: 1px solid black;
+}
+.carrinho img{
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.carrinho h2{
+    display: inline-block;
+}
+.carrinho article{
+    min-height: 150px;
+    max-height: 300px;
+    background-color: rgba(10, 10, 10, 0.7);
+    overflow-y: scroll;
+}
+.listaCarrinho ul{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.listaCarrinho ul li{
+    list-style: none;
+    margin: 8px;
+    color: rgba(250, 223, 32);
+    border-bottom: 1px purple solid;
+}
+.subTotalCarrinho{
+    min-height: 150px;
+    border-top: 1px solid black;
+    text-align: center;
+}
+.subTotalCarrinho span, p, input{
+    font-size: 15px;
+    text-transform: uppercase;
+    
+}
+.subTotalCarrinho input{
+    margin-bottom: auto;
+    transition: 0.6s;
+    padding: 5px;
+    background-color:rgba(250, 223, 32, 0.7);
+    color: rgb(17, 16, 16);
+    border-bottom: 3px solid rgb(100, 98, 98);
+    border-radius: 5px;
+}
+    .subTotalCarrinho input:hover{
+        background-color:rgb(17, 16, 16);
+        color: rgba(250, 223, 32, 0.7);
+    }
+.informacoesFinais{
+    margin-bottom: 0px;
+    border-top: 1px solid black;
+}       
+/* fim corpo */

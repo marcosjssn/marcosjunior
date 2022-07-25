@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portifolio | Marcos</title>
+    <link rel="icon" type="imagem/png" href="./assets/files/imagens/logo.png" />
+
+    <link rel="stylesheet" href="./assets/css/estilo_index.css">
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <header class="menu">
+        <div class="imgNome">
+            <img src="./assets/files/imagens/logoSemFundo.png" alt="">
+        </div>
+        <section class="menuSection">
+            <section class="navegacaoHamburguer">
+                <div class="hamburguer1"></div>
+                <div class="hamburguer2"></div>
+                <div class="hamburguer3"></div>
+            </section>
+
+            <section class="navegacaoMenu">
+                <div class="iconesTopo">
+                    <a href="https://www.linkedin.com/in/marcos-junior-005200212/" target="_blank">
+                        <img src="./assets/files/imagens/linkedin.png">
+                    </a>
+                    <a href="https://www.instagram.com/marcosjrssn/" target="_blank">
+                        <img src="./assets/files/imagens/instagram.png">
+                    </a>
+                    <a href="https://www.instagram.com/marcosjrssn/" target="_blank">
+                        <img src="./assets/files/imagens/gitHub.png">
+                    </a>
+                </div>
+                <nav class="btnMenu">
+                    <a href="#projetos" onclick="atalho()">
+                        <div>
+                            Projetos
+                        </div>
+                    </a>
+                    <a href="./assets/files/pdf/marcos curriculo.docx" download="">
+                        <div>
+                            Curriculo
+                        </div>
+                    </a>
+                    <a href="./assets/html/certificados.html" target="_blank">
+                        <div>
+                            Certificados
+                        </div>
+                    </a>
+                </nav>
+
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/files/imagens/img1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/files/imagens/img2.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/files/imagens/img3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <section class="conteudo">
+            <div class="sobre">
+                <h1>
+                    Apresentação
+                </h1>
+                <hr>
+                <div class="sobre-conteudo">
+                    <span class="sobre-conteudo-caixa1">
+                        <h2>
+                            Sobre mim
+                        </h2>
+                        <p>
+                            Olá, me chamo Marcos, Sou um estudante e apaixonado pela area de programação que sempre esta em
+                            busca de aprimorar meus conhecimentos. Tenho cursos de 'Web designer' e 'Programador Web',
+                            nos quais aprendi sobre HTML5; CSS; JavaScript e Responsividade. Além disso estou cursando
+                            'Analise e Desenvolvimento de Sistemas' para melhorar minhas habilidades com linguagens de
+                            programação.
+                        </p>
+                    </span>
+                    <figure class="sobre-conteudo-img">
+                        <img src="./assets/files/imagens/fotoAbout.png" alt="">
+                    </figure>
+                    <span class="sobre-conteudo-caixa2">
+                        <h2>
+                            Objetivo
+                        </h2>
+                        <p>
+                            Estou em procura de iniciar na area de TI como desenvolvedor Front-End, tenho facilidade e disponibilidade em aprender novas linguagens. Por isso busco uma empresa que possa dividir
+                            seus conhecimentos e experiencias comigo, para que assim eu possa contribuir cada vez mais
+                            com a mesma.
+                        </p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="skils">
+                <h1>Conhecimentos</h1>
+                <div class="linguagens">
+                    <span>
+                        <img src="./assets/files/imagens/html.png" alt="">
+                        <div>
+                            <h1> Criação de sites</h1>
+                            <p> Paginas web atraentes e interativas com foco no designer e experiencia do usuario.</p>
+                        </div>
+                    </span>
+                    <span>
+                        <img src="./assets/files/imagens/css.png" alt="">
+                        <div>
+                            <h1> Folhas de estilo</h1>
+                            <p> Dar mais vida ao site com efeitos que tornam a pagina mais elegante.</p>
+                        </div>
+                    </span>
+                    <span>
+                        <img src="./assets/files/imagens/js.png" alt="">
+                        <div>
+                            <h1> Recursos javascript</h1>
+                            <p> Criação de conteudos dinamicos tornando a pagina mais interessante.</p>
+                        </div>
+                    </span>
+                    <span>
+                        <img src="./assets/files/imagens/responsivo.png" alt="">
+                        <div>
+                            <h1> Responsividade</h1>
+                            <p>
+                                Deixar o site adaptavel para varias opções de tela e aparelho.
+                            </p>
+                        </div>
+                    </span>
+                    <span>
+                        <img src="./assets/files/imagens/bootstrap.png" alt="">
+                        <div>
+                            <h1> bootstrap</h1>
+                            <p>
+                                Utilizar ferramenta para failitar na parte de criaçao de sites.
+                            </p>
+                        </div>
+                    </span>
+                </div>
+            </div>
+
+            <div class="projetos" id="projetos">
+                <h1>
+                    Projetos
+                </h1>
+                <!-- <div class="projeto">
+                    <h1>
+                        titulo
+                    </h1>
+                    <aside class="projeto-conteudo">
+                        <figure>
+                            <img src="./assets/files/imagens/logo.png" alt="">
+                        </figure>
+                        <span>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus, suscipit
+                                tempore aliquid unde adipisci architecto. Nam, nihil quis deleniti dignissimos odit
+                                nostrum assumenda vitae ad fugit deserunt sequi veniam.
+                            </p>
+                        </span>
+                    </aside>
+                    <a href="">Abrir projeto</a>
+                </div> -->
+            </div>
+        </section>
+    </main>
+    <footer id="contato">
+
+    </footer>
+
+    <script src="./assets/javaScript/menu.js"></script>
+    <script src="./assets/javaScript/adicionarProjetos.js"></script>
+</body>
+
+</html>

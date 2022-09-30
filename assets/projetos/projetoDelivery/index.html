@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto Ifood</title>
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+    <header class="cabecalho" id="idCabecalho">
+
+        <div class="container">
+
+            <div class="cabecalho__logoIfood">
+                <figure>
+                    <img src="./assets/img/logo.png" alt="Logo Ifood">
+                    <figcaption>Logo</figcaption>
+                </figure>
+            </div>
+
+            <div class="cabecalho__restaurante">
+                <div class="cabecalho__fundoImagem">
+                    <img src="./assets/img/restaurante.png" alt="Restaurante">
+                </div>
+                <p>Restaurante</p>
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="secaoInfoRestaurante">
+
+            <div class="container">
+                <div class="secaoInfoRestaurante__pesquisar">
+                    <button>
+                        <img src="./assets/img/lupa.png" alt="">
+                    </button>
+                    <input type="text" placeholder="Buscar no cardápio">
+                </div>
+            </div>
+
+        </section>
+
+        <section class="secaoPratosDestaque">
+            <div class="container">
+                <h2 class="secaoPratosDestaque__titulo">Destaque</h2>
+                <ul class="secaoPratosDestaque__listaPratos"></ul>
+            </div>
+        </section>
+
+        <div class="conteudoPrincipal">
+            <div class="container">
+                <div class="secaoConteudo">
+                    <section class="secaoSobremesas">
+                        <h2 class="secaoSobremesas__titulo">Sobremesas</h2>
+                        <ul class="secaoSobremesas__listaSobremesas">
+    
+                        </ul>
+                    </section>
+    
+                    <section class="secaoBebidas">
+                        <h2 class="secaoBebidas__titulo">Bebidas</h2>
+                        <ul class="secaoBebidas__listaBebidas">
+    
+                        </ul>
+                    </section>
+                </div>
+
+                <section class="secaoCarrinho">
+                    <div class="container__carrinho">
+                        <h2 class="secaoCarrinho__titulo">Carrinho</h2>
+    
+                        <div class="secaoCarrinho__conteudo">
+                            <ul class="secaoCarrinho__listaItens">
+    
+                            </ul>
+    
+                            <div class="secaoCarrinho__total">
+                                <p>Total</p>
+                                <span>0,00</span>
+                            </div>
+    
+                            <div class="secaoCarrinho__formaPagamento">
+                                <button onclick="enviarPedido()">Finalizar Meu Pedido</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

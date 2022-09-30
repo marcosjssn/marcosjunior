@@ -1,0 +1,431 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+input,
+button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cabecalho {
+    background-color: #F7F7F7;
+    border-bottom: 2px solid #DCDCDC;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.cabecalho>.container {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__logoIfood {
+    margin-right: 60px;
+}
+
+.cabecalho__logoIfood>figure>img {
+    width: 90px;
+}
+
+.cabecalho__logoIfood>figure>figcaption {
+    display: none;
+}
+
+.cabecalho__restaurante {
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho__fundoImagem {
+    background-color: #EA1D2C;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    padding-top: 6px;
+    margin-right: 16px;
+}
+
+.cabecalho__fundoImagem>img {
+    width: 50px;
+}
+
+.cabecalho__restaurante>p {
+    color: #717171;
+    font-weight: 600;
+}
+
+main {
+    margin-bottom: 230px;
+}
+
+.secaoInfoRestaurante {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.secaoInfoRestaurante__descricao {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.secaoInfoRestaurante__logoRestaurante {
+    background-color: #0000FF;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    border-radius: 100%;
+    padding-top: 8px;
+    margin-right: 20px;
+}
+
+.secaoInfoRestaurante__logoRestaurante>img {
+    width: 25px;
+}
+
+.secaoInfoRestaurante__logoRestaurante>figcaption {
+    display: none;
+}
+
+.secaoInfoRestaurante__nomeRestaurante {
+    font-weight: 600;
+    color: #717171;
+}
+
+.secaoInfoRestaurante__pesquisar {
+    display: flex;
+    border: 1px solid #F4F4F4;
+}
+
+.secaoInfoRestaurante__pesquisar>button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.secaoInfoRestaurante__pesquisar>button>img {
+    width: 52px;
+}
+
+.secaoInfoRestaurante__pesquisar>input {
+    border: none;
+    outline: none;
+}
+
+.secaoPratosDestaque__titulo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #3E3E3E;
+    margin-bottom: 30px;
+}
+
+.secaoPratosDestaque__listaPratos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secaoPratosDestaque__itemPrato {
+    width: 31%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    box-shadow: 4px 7px 6px 0px #7e7d7d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.secaoPratosDestaque__itemPrato:hover {
+    background-color: #e0e0e0;
+    box-shadow: 4px 7px 6px 0px #4e4e4e;
+}
+
+.secaoPratosDestaque__itemPrato>a {
+    color: #3E3E3E;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: white;
+}
+
+.secaoPratosDestaque__itemPrato>a>figure>img {
+    width: 100%;
+}
+
+.secaoPratosDestaque__itemPrato>a>figure>figcaption {
+    display: none;
+}
+
+.secaoPratosDestaque__itemPrato>a>div>h3 {
+    padding-bottom: 90px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.secaoPratosDestaque__itemPrato>a>div>span {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+
+.conteudoPrincipal {
+    margin-top: 60px;
+}
+
+.conteudoPrincipal>.container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.secaoConteudo{
+    width: 90%;
+    margin: 20px 50px 20px 0px;
+}
+
+.secaoSobremesas__titulo {
+    color: #3E3E3E;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.secaoSobremesas__listaSobremesas {
+    margin-top: 30px;
+}
+
+.secaoSobremesas__itemSobremesa {
+    margin-bottom: 32px;
+    box-shadow: 4px 8px 6px 0px #7e7d7d;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.secaoSobremesas__itemSobremesa:hover {
+    box-shadow: 4px 8px 6px 0px #4e4e4e;
+}
+
+.secaoSobremesas__itemSobremesa>a {
+    text-decoration: none;
+    color: #3E3E3E;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    flex-direction: row-reverse;
+    background-color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.secaoSobremesas__itemSobremesa>a:hover {
+    background-color: #e0e0e0;
+}
+
+.secaoSobremesas__itemSobremesa>a>div {
+    padding: 20px;
+}
+
+.secaoSobremesas__itemSobremesa>a>div>p {
+    color: #787878;
+    font-weight: 500;
+    padding-top: 26px;
+    padding-bottom: 78px;
+}
+
+.secaoSobremesas__itemSobremesa>a>figure>img {
+    width: 250px;
+}
+
+.secaoSobremesas__itemSobremesa>a>figure>figcaption {
+    display: none;
+}
+
+.secaoBebidas__titulo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #3E3E3E;
+    margin-bottom: 30px;
+}
+
+.secaoBebidas__listaBebidas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.secaoBebidas__itemBebida {
+    margin-bottom: 20px;
+    width: 31%;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding-bottom: 15px;
+    box-shadow: 4px 7px 6px 0px #7e7d7d;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.secaoBebidas__itemBebida:hover {
+    background-color: #e0e0e0;
+    box-shadow: 4px 7px 6px 0px #4e4e4e;
+}
+
+.secaoBebidas__itemBebida>a {
+    color: #3E3E3E;
+    text-decoration: none;
+    font-weight: 600;
+    background-color: white;
+}
+
+.secaoBebidas__itemBebida>a>figure>img {
+    width: 100%;
+}
+
+.secaoBebidas__itemBebida>a>figure>figcaption {
+    display: none;
+}
+
+.secaoBebidas__itemBebida>a>div>h3 {
+    padding-bottom: 90px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.secaoBebidas__itemBebida>a>div>span {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.secaoCarrinho {
+    min-width: 25%;
+}
+
+.container__carrinho {
+    position: sticky;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+}
+
+.secaoCarrinho__titulo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #EA1D2C;
+}
+
+.secaoCarrinho__conteudo {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 30px 40px;
+    margin-top: 40px;
+    max-height: 50%;
+}
+
+.secaoCarrinho__listaItens {
+    min-height: 80px;
+    max-height: 250px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.secaoCarrinho__listaItens::-webkit-scrollbar {
+    width: 5px;
+}
+
+.secaoCarrinho__listaItens::-webkit-scrollbar-track {
+    background: rgb(235, 233, 233);
+}
+
+.secaoCarrinho__listaItens::-webkit-scrollbar-thumb {
+    background-color: silver;
+}
+
+.secaoCarrinho__item {
+    font-weight: 600;
+    color: #3e3e3e;
+    border-bottom: 2px solid #3E3E3E;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+.secaoCarrinho__item>div {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.secaoCarrinho__item>button {
+    color: #A6A6A6;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    padding: 0;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.secaoCarrinho__item>button:hover {
+    color: #363535;
+
+}
+
+.secaoCarrinho__total {
+    font-weight: 600;
+    color: #3e3e3e;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px auto 30px auto;
+}
+
+.secaoCarrinho__formaPagamento {
+    text-align: center;
+}
+
+.secaoCarrinho__formaPagamento>button {
+    background-color: #EA1D2C;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 18px 0;
+    border-radius: 5px;
+    width: 100%;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.secaoCarrinho__formaPagamento>button:hover {
+    background-color: #b90e1a;
+    animation: teste 2s ease-in-out infinite;
+    transition: 0.3s;
+}
+
+@keyframes teste {
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.secaoCarrinho__formaPagamento>a {
+    text-decoration: none;
+}
+
+.secaoCarrinho__formaPagamento>a div {
+    margin: 10px;
+    background-color: #EA1D2C;
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    padding: 18px 0;
+    border-radius: 5px;
+    width: 100%;
+}

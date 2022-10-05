@@ -13,9 +13,16 @@ menuHamburguer.addEventListener("click", () => {
             ativoDesativo= true
         }
     menuSection.classList.toggle("ON")
+    console.log(menuSection.classList.value);
+    if(menuSection.classList.value === "menuSection ON"){
+        document.body.style.overflow= "hidden";
+
+    }else{
+        document.body.style.overflow= "initial";
+    }
 })
 
 function atalho(){
     document.body.style.overflow= "initial";
-    menuSection.classList.remove("ON")
+    menuSection.classList.remove("ON");
 }

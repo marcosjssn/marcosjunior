@@ -1,0 +1,65 @@
+@import url('http://fonts.cdnfonts.com/css/super-mario-world-text-box');
+
+.campoLogin{
+    background-image: url(../imagens/backgroundLogin.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    overflow: hidden;
+    background-color: rgb(128, 128, 128, 0.5);
+    width: 50%;
+    height: 50%;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+.login-form h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    font-family : 'Super Mario World Text Box' , sans-serif ; 
+}
+.marioLogin{
+    animation: animacaoMarioLogin 4s infinite linear;
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+}
+@keyframes animacaoMarioLogin{
+    from{
+        left: -200px;
+    }
+    to{
+        left: 100%;
+    }
+}
+.inputLogin{
+    width: 50%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.bottonLogin{
+    background-color: #ee665c;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    max-width: 300px;
+    padding: 15px;
+    width: 15%;
+}
+.bottonLogin:disabled{
+    background-color: #eee;
+    color: #aaa;
+    cursor: auto;
+}

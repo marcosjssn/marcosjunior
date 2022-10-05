@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Rum</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+
+    <div class="game-board">
+        <img src="../imagens/clouds.png" class="nuvem">
+        <img src="../imagens/mario.gif" class="mario">
+        <img src="../imagens/pipe.png" class="pipe">
+        <table class="painel">
+            <tr>
+                <th>
+                    Time:
+                </th>
+                <td class="pontuacao">
+                    0
+                </td>
+            </tr>
+            <tr>
+                <th>
+                    Record:
+                </th>
+                <td class="record">
+                    0
+                </td>
+            </tr>
+
+        </table>
+        <img src="../imagens/Layer 1'.png" class="chao">
+
+    </div>
+
+    <div class="gameOverMenu">
+        <h1>
+            Game Over!
+        </h1>
+        <p>
+            Parabens <span id="jogadorMenuGameOver">Jogador</span> seu tempo foi de: <span id="pontuacaoMenu">0000</span>!
+        </p>
+        <div class="botoes">
+            <button type="button" class="botaoRecomecar" onclick="recomecar()"> -Recomeçar- </button>
+            <button type="button" class="botaoVoltar" onclick="voltarInicio()"> -Voltar inicio-</button>
+        </div>
+    </div>
+
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('http://fonts.cdnfonts.com/css/super-mario-world-text-box');
+.game-board {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CCEB, #E0F6FF) ;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 60px;
+    width: 80px;
+    animation: pipeAnimation infinite linear;
+    animation-duration: 2s;
+}
+
+@keyframes pipeAnimation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+
+}
+
+.mario {
+    width: 150px;
+    position: absolute;
+    bottom: 60px;
+}
+
+.pulo {
+    animation: pulo 500ms ease-in-out;
+}
+
+@keyframes pulo {
+    0% {
+        bottom: 60px;
+    }
+
+    40% {
+        bottom: 240px;
+    }
+
+    50% {
+        bottom: 240px;
+    }
+
+    60% {
+        bottom: 240px;
+    }
+
+    100% {
+        bottom: 60px;
+    }
+
+}
+.nuvem{
+    position: absolute;
+    width: 550px;
+    animation: nuvens 20s infinite linear;
+}
+
+@keyframes nuvens {
+    from {
+        right: -550px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+.chao{
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0px;
+}
+.painel{
+    width: 200px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    border: 3px solid rgb(20, 127, 189);
+}
+.painel th{
+    text-align: start;
+}
+.painel td{
+    text-align: end;
+}
+.painel th, td{
+    padding: 10px;
+}
+.gameOverMenu{
+    display: none;
+    font-family : 'Super Mario World Text Box' , sans-serif ; 
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    height: 50%;
+    width: 50%;
+    overflow: hidden;
+    background-color: rgb(128, 128, 128, 0.5);
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.gameOverMenu h1{
+    font-size: 35px;
+}
+.gameOverMenu p{
+    margin: auto 0;
+}
+#jogadorMenuGameOver{
+    text-transform: capitalize;
+}
+.botoes{
+    width: 100%;
+}
+.botaoRecomecar{
+    margin: auto 0 0;
+    background-color: #ee665c;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    max-width: 300px;
+    padding: 15px;
+    width: 20%;
+    cursor: url('../imagens/Green\ Mushroom.ico') 17.5 17.5,auto !important;
+}
+.botaoVoltar{
+    margin: auto 0 0;
+    background-color: #ee665c;
+    border-radius: 8px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 16px;
+    max-width: 300px;
+    padding: 15px;
+    width: 20%;
+    cursor: url('../imagens/Brown\ Mushroom.ico') 17.5 17.5,auto !important;
+}
+.botaoRecomecar:hover{
+    background-color: #cf625a;
+
+}
